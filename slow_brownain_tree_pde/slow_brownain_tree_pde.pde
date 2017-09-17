@@ -12,7 +12,8 @@ void setup () {
 float X = 26; // Always start at 26x
 float Y = 12; // Always start at 12y
 void draw() {
-  point (X, Y); // Draw point at 26x & 12y. 
+  point (X, Y); // Draw point at x & y. 
+                // For debugging only, we should disable this when generating an actual tree.
   float newX = X + random (-1, +1); 
   float newY = Y + random (-1, +1); 
   if (get((int)newX, (int)newY) == color(255, 0, 0))
